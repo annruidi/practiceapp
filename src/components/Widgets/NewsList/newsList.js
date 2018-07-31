@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 import {URL} from '../../../config';
 import styles from './newslist.css';
 import Button from '../Button/button';
-import CradInfo from '../CardInfo/cardinfo';
+import CardInfo from '../CardInfo/cardinfo';
 
 
 class NewsList extends Component {
@@ -56,7 +56,7 @@ class NewsList extends Component {
                 <div>
                 <div className={styles.newslist_item}>
                     <Link to={`/articles/${item.id}`}>
-                        <CradInfo teams ={this.state.teams} team={item.team} date ={item.date}/>
+                        <CardInfo teams ={this.state.teams} team={item.team} date ={item.date}/>
                         <h2>{item.title}</h2>
                     </Link>
                 </div>
